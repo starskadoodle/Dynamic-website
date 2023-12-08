@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Easter Date Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Easter Date Finder</h1>
+        <form method="post" action="\\websites.cs.cf.ac.uk\c23064206\project\cgi-bin\easter_cgi.py">
+            <label for="year">Enter Year:</label>
+            <input type="number" id="year" name="year" required min="0">
+            
+            <label>Choose Format:</label>
+            <label><input type="radio" name="format" value="numeric" checked> Numerically (dd/mm/year)</label>
+            <label><input type="radio" name="format" value="verbose"> Verbosely (12th April 2020)</label>
+            <label><input type="radio" name="format" value="both"> Both Formats</label>
+                
+            <input type="submit" value="Find Easter Date">
+        </form>
+    </div>
+</body>
+</html>
